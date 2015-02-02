@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as VacationViewController
+        vc.title = sender?.currentTitle
 
+        if segue.identifier == "CruiseNeptune"{
+            vc.isCruiseNeptune = true
+        }
+    }
 }
 

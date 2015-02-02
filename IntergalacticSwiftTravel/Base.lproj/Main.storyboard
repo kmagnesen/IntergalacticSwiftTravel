@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Jcv-7e-EjJ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Swift Travel-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="IntergalacticSwiftTravel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,106 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7H-hn-XpM">
+                                <rect key="frame" x="0.0" y="158" width="600" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="BXW-It-3jI"/>
+                                    <constraint firstAttribute="width" constant="600" id="qgb-Vt-JTd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Superclarendon-BoldItalic" family="Superclarendon" pointSize="30"/>
+                                <state key="normal" title="Ski Pluto">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UiA-Mj-V2m" kind="show" identifier="SkiPluto" id="uDE-N4-oAf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgn-IZ-P2x">
+                                <rect key="frame" x="0.0" y="265" width="600" height="70"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Dug-hm-gHv"/>
+                                    <constraint firstAttribute="width" constant="600" id="dAu-Xr-Q8s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Superclarendon-BoldItalic" family="Superclarendon" pointSize="30"/>
+                                <state key="normal" title="Cruise Neptune">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UiA-Mj-V2m" kind="show" identifier="CruiseNeptune" id="2YG-ZV-7an"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="m7H-hn-XpM" secondAttribute="centerY" constant="107" id="9LM-pr-86t"/>
+                            <constraint firstAttribute="centerX" secondItem="m7H-hn-XpM" secondAttribute="centerX" id="ER8-bp-cbZ"/>
+                            <constraint firstAttribute="centerY" secondItem="dgn-IZ-P2x" secondAttribute="centerY" id="UBw-Ad-tdD"/>
+                            <constraint firstAttribute="centerX" secondItem="dgn-IZ-P2x" secondAttribute="centerX" id="UeH-bi-Bq0"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Swift Travel" id="p47-uV-j01"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="893" y="623"/>
+        </scene>
+        <!--Vacation View Controller-->
+        <scene sceneID="0Bl-5Q-6of">
+            <objects>
+                <viewController id="UiA-Mj-V2m" customClass="VacationViewController" customModule="IntergalacticSwiftTravel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VVa-cX-ZUW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ecw-dX-zJe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PKd-Lw-1QA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q4G-8z-Ynn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q4G-8z-Ynn" firstAttribute="top" secondItem="PKd-Lw-1QA" secondAttribute="topMargin" id="OoI-vC-iqK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q4G-8z-Ynn" secondAttribute="trailing" constant="-16" id="UyS-ci-o7q"/>
+                            <constraint firstItem="Ecw-dX-zJe" firstAttribute="top" secondItem="q4G-8z-Ynn" secondAttribute="bottom" id="enx-HB-bxv"/>
+                            <constraint firstItem="q4G-8z-Ynn" firstAttribute="leading" secondItem="PKd-Lw-1QA" secondAttribute="leadingMargin" constant="-16" id="kOh-VX-4iq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="q4G-8z-Ynn" id="g1t-r1-Ph4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nV2-Bn-ZpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="623"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PS0-q3-mtS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jcv-7e-EjJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ygf-V5-aMD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="TQp-6n-suJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpN-Cx-ta4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="623"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2YG-ZV-7an"/>
+    </inferredMetricsTieBreakers>
 </document>

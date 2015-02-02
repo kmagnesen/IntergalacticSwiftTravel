@@ -13,6 +13,7 @@
 		F91D60701A7FED3A000CE1CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91D606F1A7FED3A000CE1CD /* Images.xcassets */; };
 		F91D60731A7FED3A000CE1CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F91D60711A7FED3A000CE1CD /* LaunchScreen.xib */; };
 		F91D607F1A7FED3A000CE1CD /* IntergalacticSwiftTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D607E1A7FED3A000CE1CD /* IntergalacticSwiftTravelTests.swift */; };
+		F91D60891A7FF0CC000CE1CD /* VacationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D60881A7FF0CC000CE1CD /* VacationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F91D60781A7FED3A000CE1CD /* IntergalacticSwiftTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntergalacticSwiftTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91D607D1A7FED3A000CE1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F91D607E1A7FED3A000CE1CD /* IntergalacticSwiftTravelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntergalacticSwiftTravelTests.swift; sourceTree = "<group>"; };
+		F91D60881A7FF0CC000CE1CD /* VacationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				F91D60681A7FED3A000CE1CD /* AppDelegate.swift */,
 				F91D606A1A7FED3A000CE1CD /* ViewController.swift */,
+				F91D60881A7FF0CC000CE1CD /* VacationViewController.swift */,
 				F91D606C1A7FED3A000CE1CD /* Main.storyboard */,
 				F91D606F1A7FED3A000CE1CD /* Images.xcassets */,
 				F91D60711A7FED3A000CE1CD /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				F91D606B1A7FED3A000CE1CD /* ViewController.swift in Sources */,
 				F91D60691A7FED3A000CE1CD /* AppDelegate.swift in Sources */,
+				F91D60891A7FF0CC000CE1CD /* VacationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
